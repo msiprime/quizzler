@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quizzler/question.dart';
 
 void main() => runApp(Quizzler());
 
@@ -45,7 +46,15 @@ class _QuizPageState extends State<QuizPage> {
     'A E I O U are vowels'
   ];
   List<Widget> scoreKeeper = [];
-  List<bool> answers = [true, false, true, true, true, true];
+  List<bool> answers = [true, false, true, false, true, true];
+  Question q1 =
+      Question('You can lead a cow down stairs but not up stairs.', true);
+  Question q2 = Question(
+      'Approximately one quarter of human bones are in the feet.', false);
+  Question q3 = Question('A slug\'s blood is green.', true);
+  Question q4 = Question('Ayrin is ula ula lala lala', true);
+  Question q5 = Question('vombol das vombol das', true);
+  Question q6 = Question('Rakib is chacha chacha cha cha cha', true);
 
   @override
   Widget build(BuildContext context) {
