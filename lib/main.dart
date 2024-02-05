@@ -42,7 +42,7 @@ class _QuizPageState extends State<QuizPage> {
           ),
           child: Text(
             stringTrueFalse,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.white,
               fontSize: 22.0,
             ),
