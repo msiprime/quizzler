@@ -1,5 +1,6 @@
 class Question {
   String question;
   bool answer;
-  Question(this.question, this.answer);
+
+  Question({required this.question, required this.answer});
 }
